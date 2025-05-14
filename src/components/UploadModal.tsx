@@ -89,7 +89,7 @@ export const UploadModal = () => {
                   <button
                     key={option.id}
                     onClick={() => handleOptionSelect(option.id)}
-                    className="flex flex-row items-center justify-start px-3 py-2 hover:bg-gray-50 transition-colors gap-4"
+                    className="flex flex-row items-center justify-start px-5 py-2 hover:bg-indigo-50 rounded-lg transition-colors gap-4"
                   >
                     <span className="text-gray-600 mb-1">{option.icon}</span>
                     <span className="text-sm text-black text-center">{option.name}</span>
