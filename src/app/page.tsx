@@ -1,8 +1,14 @@
+'use client';
+
+import { useState } from "react";
 import { AdvancedSettings } from "@/components/AdvancedSettings";
 import { CaptionSettings } from "@/components/CaptionSettings";
+import { GenerateButton } from "@/components/GenerateButton";
 import { VideoUploadSection } from "@/components/VideoUploadSection";
 
 export default function Home() {
+  const [hasVideo, setHasVideo] = useState(false);
+
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
@@ -17,9 +23,10 @@ export default function Home() {
 
         <div className="bg-white shadow rounded-lg p-6 sm:p-8">
           {/* Components */}
-          <VideoUploadSection/>
+          <VideoUploadSection onFileChange={(file) => setHasVideo(!!file)}/>
           <CaptionSettings/>
           <AdvancedSettings/>
+          <GenerateButton disabled={!hasVideo} />
         </div>
       </div>
     </div>

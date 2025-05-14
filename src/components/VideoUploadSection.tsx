@@ -4,12 +4,21 @@ import { useState } from 'react';
 import { UploadIcon } from './Icons';
 import { UploadModal } from './UploadModal';
 
-export const VideoUploadSection = () => {
+type VideoUploadSectionProps = {
+  onFileChange: (file: File | null ) => void;
+};
+
+export const VideoUploadSection = ({ onFileChange }: VideoUploadSectionProps) => {
   const [file, setFile] = useState<File | null>(null);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files && e.target.files.length > 0) {
-      setFile(e.target.files[0]);
+      const selectedFile = e.target.files[0];
+      setFile(selectedFile);
+      onFileChange(selectedFile);
+    } else {
+      setFile(null);
+      onFileChange(null);
     }
   };
 
