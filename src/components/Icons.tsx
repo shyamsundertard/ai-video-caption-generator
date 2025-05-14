@@ -1,27 +1,29 @@
 import { 
-  FiUpload, 
   FiChevronDown, 
   FiX, 
-  FiVideo,
-  FiLink,
-  FiCamera
+  FiCamera,
+  FiFacebook
 } from 'react-icons/fi';
 import { 
-  SiDropbox,
-  SiFacebook,
-  SiGoogledrive
+  SiGooglephotos
 } from 'react-icons/si';
 import { 
-  AiOutlineGoogle
+  AiOutlineLink
 } from 'react-icons/ai';
+import { GoFileDirectory } from "react-icons/go";
+import { 
+  PiDropboxLogoLight,
+  PiUploadSimpleBold
+ } from "react-icons/pi";
+import { TbBrandGoogleDrive } from "react-icons/tb";
 
-export const UploadIcon = FiUpload;
+export const UploadIcon = PiUploadSimpleBold;
 export const ChevronDownIcon = FiChevronDown;
 export const XIcon = FiX;
-export const DeviceIcon = FiVideo;
-export const LinkIcon = FiLink;
+export const DeviceIcon = GoFileDirectory;
+export const LinkIcon = AiOutlineLink;
 export const CameraIcon = FiCamera;
-export const DropboxIcon = SiDropbox;
-export const FacebookIcon = SiFacebook;
-export const GoogleDriveIcon = SiGoogledrive;
-export const GooglePhotosIcon = AiOutlineGoogle;
+export const DropboxIcon = PiDropboxLogoLight;
+export const FacebookIcon = FiFacebook;
+export const GoogleDriveIcon = TbBrandGoogleDrive;
+export const GooglePhotosIcon = SiGooglephotos;

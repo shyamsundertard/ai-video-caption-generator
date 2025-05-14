@@ -24,8 +24,8 @@ export const CaptionSettings = () => {
 
   return (
     <div className="mt-8">
-      <h2 className="text-lg font-medium text-gray-900">Subtitles Position</h2>
-      <div className="mt-4">
+      <h2 className="font-medium text-sm text-black">Subtitles Position</h2>
+      <div className="mt-2">
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="w-full justify-between">

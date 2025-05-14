@@ -19,7 +19,7 @@ export const GenerateButton = ({ disabled = false }: GenerateButtonProps) => {
   };
 
   return (
-    <div className="mt-8 text-center w-full">
+    <div className="mt-5 text-center w-full">
       <button
         onClick={handleGenerate}
         disabled={disabled || isGenerating}

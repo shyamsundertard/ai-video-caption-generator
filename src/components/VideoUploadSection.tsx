@@ -24,8 +24,9 @@ export const VideoUploadSection = ({ onFileChange }: VideoUploadSectionProps) =>
 
   return (
     <div>
-      <h2 className="text-lg font-medium text-gray-900">Upload Video</h2>
-      <div className="mt-4 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
+      <h2 className="text-lg font-bold text-black">Upload Video</h2>
+      <div className='flex justify-center items-center mt-4 border rounded-xl'>
+      <div className="w-full border-[2px] border-dashed border-gray-200 rounded-lg p-5 m-6 text-center">
         <input
           type="file"
           id="video-upload"
@@ -35,17 +36,20 @@ export const VideoUploadSection = ({ onFileChange }: VideoUploadSectionProps) =>
         />
         <label
           htmlFor="video-upload"
-          className="cursor-pointer flex flex-col items-center justify-center"
+          className="cursor-pointer flex flex-col sm:flex-row items-center justify-center"
         >
-          <UploadIcon className="w-12 h-12 text-gray-400 mb-4" />
-          <p className="text-gray-600 mb-2">Upload files</p>
+          <UploadIcon className="w-8 h-8 text-gray-500" />
+          <div className='flex flex-col'>
+          <p className="text-gray-500 font-medium text-sm">Upload files</p>
           <UploadModal />
+          </div>
         </label>
         {file && (
           <p className="mt-4 text-sm text-gray-600">
             Selected: {file.name} ({(file.size / (1024 * 1024)).toFixed(2)} MB)
           </p>
         )}
+      </div>
       </div>
     </div>
   );

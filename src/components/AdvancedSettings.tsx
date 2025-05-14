@@ -43,10 +43,10 @@ export const AdvancedSettings = () => {
   ];
 
   return (
-    <div className="mt-8">
+    <div className="mt-4">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-blue-600 font-medium hover:text-blue-800 transition-colors"
+        className="w-full flex items-center justify-center font-medium border rounded-md p-2 text-sm"
       >
         Advanced Settings
         <ChevronDownIcon className={`w-5 h-5 ml-2 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
