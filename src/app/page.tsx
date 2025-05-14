@@ -1,3 +1,4 @@
+import { CaptionSettings } from "@/components/CaptionSettings";
 import { VideoUploadSection } from "@/components/VideoUploadSection";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
         <div className="bg-white shadow rounded-lg p-6 sm:p-8">
           {/* Components */}
           <VideoUploadSection/>
+          <CaptionSettings/>
         </div>
       </div>
     </div>
