@@ -26,12 +26,20 @@ export const AdvancedSettings = () => {
   });
 
   const fontStyles = [
+    'Poppins Bold',
+    'Poppins Bold Italic',
     'Poppins Extra Bold',
-    'Roboto',
-    'Open Sans',
-    'Montserrat',
-    'Arial',
-    'Helvetica',
+    'Poppins Extra Bold Italic',
+    'Poppins Black',
+    'Poppins Black Italic',
+    'Atkinson Bold',
+    'Atkinson Bold Italic',
+    'M PLUS Rounded Extra Bold',
+    'Arial Bold',
+    'Arial Bold Italic',
+    'Tajawal Bold',
+    'Tajawal Extra Bold',
+    'Tajawal Black',
   ];
 
   return (
