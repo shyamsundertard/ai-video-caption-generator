@@ -1,3 +1,4 @@
+import { AdvancedSettings } from "@/components/AdvancedSettings";
 import { CaptionSettings } from "@/components/CaptionSettings";
 import { VideoUploadSection } from "@/components/VideoUploadSection";
 
@@ -18,6 +19,7 @@ export default function Home() {
           {/* Components */}
           <VideoUploadSection/>
           <CaptionSettings/>
+          <AdvancedSettings/>
         </div>
       </div>
     </div>
