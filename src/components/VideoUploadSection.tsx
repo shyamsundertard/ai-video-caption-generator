@@ -26,7 +26,7 @@ export const VideoUploadSection = ({ onFileChange }: VideoUploadSectionProps) =>
     <div>
       <h2 className="text-lg font-bold text-black">Upload Video</h2>
       <div className='flex justify-center items-center mt-4 border rounded-xl'>
-      <div className="w-full border-[2px] border-dashed border-gray-200 rounded-lg p-5 m-6 text-center">
+      <div className="w-full border-[2px] border-dashed border-gray-200 hover:border-black rounded-lg p-5 m-6 text-center">
         <input
           type="file"
           id="video-upload"
