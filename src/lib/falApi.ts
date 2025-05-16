@@ -2,25 +2,25 @@ import { fal } from "@fal-ai/client";
 
 interface ProcessVideoParams {
     videoUrl: string;
-    settings: {
-      position: string;
-      fontStyle: string;
-      textColor: string;
-      highlightColor: string;
-      outlineColor: string;
-      fontSize: number;
-      maxCharacters: number;
-      backgroundOpacity: number;
-      outlineWidth: number;
-      letterSpacing: number;
-      autoTranslate: boolean;
-    };
+    // settings: {
+    //   position: string;
+    //   fontStyle: string;
+    //   textColor: string;
+    //   highlightColor: string;
+    //   outlineColor: string;
+    //   fontSize: number;
+    //   maxCharacters: number;
+    //   backgroundOpacity: number;
+    //   outlineWidth: number;
+    //   letterSpacing: number;
+    //   autoTranslate: boolean;
+    // };
     webhookUrl: string;
   }
   
   export const processVideoWithCaptions = async ({
     videoUrl,
-    settings,
+    // settings,
     webhookUrl
   }: ProcessVideoParams): Promise<{ jobId: string }> => {
     try {

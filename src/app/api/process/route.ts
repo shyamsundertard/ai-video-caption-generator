@@ -32,7 +32,7 @@ export async function POST(request: Request) {
     try {
       const { jobId } = await processVideoWithCaptions({
         videoUrl,
-        settings,
+        // settings,
         webhookUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/api/webhook?${webhookQuery}`
       });
 
