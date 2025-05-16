@@ -1,11 +1,11 @@
-import { Schema, model, Document } from 'mongoose';
+import mongoose, { Schema, Document } from 'mongoose';
 
 interface IVideo extends Document {
   userId: string;
   sourceUrl: string;
   processedUrl?: string;
   captionSettings: {
-    position: number;
+    position: string;
     fontStyle: string;
     textColor: string;
     highlightColor: string;
@@ -50,4 +50,6 @@ const VideoSchema = new Schema<IVideo>({
   completedAt: { type: Date }
 });
 
-export const VideoModel = model<IVideo>('Video', VideoSchema);
+const Video = mongoose.models.Video || mongoose.model('Video', VideoSchema)
+
+export default Video;
